@@ -27,6 +27,11 @@ tlsKey = args['key'] ? args['key'] : tlsKey
 tlsCert = args['cert'] ? args['cert'] : tlsCert
 
 
+if(!localPort || !target){
+    throw Error('Define localProd (-p) and target (-t)')
+}
+
+
 // TLS Setup
 const http_options = {
     key: fs.existsSync(tlsKey) ? fs.readFileSync(tlsKey, 'utf8') : null,
@@ -62,7 +67,7 @@ const server = http.createServer(http_options, function (req, res) {
 server.listen(localPort)
 server.on('listening', () => {
     console.log(
-        `Proxy server is listening for port ${localPort}\n`,
+        `Proxy server is listening for port ${localPort} ${configuration} ${fs.existsSync(configuration)}\n`,
         `Forwarded To: ${target}`
     );
 })
