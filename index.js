@@ -11,7 +11,13 @@ let tlsCert = null
 
 let configFilePath = args['c'] ? args['c'] : args['config']
 configFilePath = configFilePath ? configFilePath : './https-port-forward.json'
-const configuration = fs.existsSync(configFilePath) ? JSON.parse(fs.readFileSync(configFilePath, 'utf8')) : null
+let configuration = fs.existsSync(configFilePath) ? fs.readFileSync(configFilePath, 'utf8') : null
+
+try{
+    configuration = JSON.parse(configuration)
+}catch(error){
+    throw Error('Invalid Config File.')
+}
 
 if (configuration) {
     target = configuration.target ? configuration.target : null
@@ -66,8 +72,9 @@ const server = http.createServer(http_options, function (req, res) {
 
 server.listen(localPort)
 server.on('listening', () => {
+    console.log(configuration)
     console.log(
-        `Proxy server is listening for port ${localPort} ${configuration} ${fs.existsSync(configuration)}\n`,
+        `Proxy server is listening for port ${localPort}\n`,
         `Forwarded To: ${target}`
     );
 })
