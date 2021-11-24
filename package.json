@@ -2,9 +2,9 @@
   "name": "@shankha/https-port-forward",
   "version": "1.0.1",
   "description": "A simple proxy server to forward ports to your local or development server.",
-  "main": "index.js",
+  "main": "bin/https-port-forward",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./bin/https-port-forward"
   },
   "keywords": [
     "http-proxy",
