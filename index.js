@@ -66,3 +66,5 @@ server.on('listening', () => {
         `Forwarded To: ${target}`
     );
 })
+
+module.exports = server
