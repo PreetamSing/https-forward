@@ -1,0 +1,23 @@
+{
+  "name": "https-port-forward",
+  "version": "1.0.0",
+  "description": "A simple proxy server to forward ports to your local or development server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "http-proxy",
+    "proxy",
+    "proxy-server",
+    "port-forword"
+  ],
+  "author": "Shankhadeep Das",
+  "license": "ISC",
+  "dependencies": {
+    "finalhandler": "^1.1.2",
+    "http-proxy": "^1.18.1",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0"
+  }
+}
