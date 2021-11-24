@@ -1,6 +1,6 @@
 {
   "name": "@shankha/https-port-forward",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A simple proxy server to forward ports to your local or development server.",
   "main": "./bin/https-port-forward.js",
   "scripts": {
