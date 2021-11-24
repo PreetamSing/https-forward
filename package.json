@@ -1,5 +1,5 @@
 {
-  "name": "https-port-forward",
+  "name": "@shankha/https-port-forward",
   "version": "1.0.0",
   "description": "A simple proxy server to forward ports to your local or development server.",
   "main": "index.js",
