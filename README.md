@@ -6,7 +6,7 @@ Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.
 ## Installation
 
 ```
-npm install https-forward
+npm install https-forward -g
 ```
 
 ## API
