@@ -25,6 +25,6 @@
     "https-forward": "./bin/executable.js"
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">= 10"
   }
 }

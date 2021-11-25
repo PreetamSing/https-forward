@@ -36,6 +36,11 @@ https-forward --port 3000 --target https://example.com
 
 ```
 
+CLI with SSL
+```bash
+https-forward -p 3000 -t https://example.com --key <path/to/ssl/key> --cert <path/to/ssl/cert>
+```
+
 ## License
 
 MIT - Shankhadeep Das
