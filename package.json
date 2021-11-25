@@ -11,7 +11,9 @@
     "http-proxy",
     "proxy",
     "proxy-server",
-    "request-forward"
+    "request-forward",
+    "http-forward",
+    "https-forward"
   ],
   "author": "Shankhadeep Das",
   "license": "MIT",
