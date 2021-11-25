@@ -13,7 +13,8 @@ const Logger = morgan('tiny')
 class Server {
     server = null
     options = null
-    create(options) {
+
+    constructor(options) {
         this.options = options
 
         if (!this.options.localPort || !this.options.target) {
@@ -39,10 +40,11 @@ class Server {
         // Create the local server
         this.server = http.createServer(http_options, function (req, res) {
             try {
+                const target= options.target
                 const done = finalhandler(req, res)
                 Logger(req, res, function (err) {
                     if (err) return done(err)
-                    proxy.web(req, res, { changeOrigin: true, target: this.options.target });
+                    proxy.web(req, res, { changeOrigin: true, target });
                 })
             } catch (error) {
                 console.log(error);

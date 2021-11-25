@@ -25,8 +25,8 @@ let tlsCert = null
 if (configuration) {
     target = configuration.target ? configuration.target : null
     localPort = configuration.localPort ? configuration.localPort : null
-    tlsKey = configuration.key ? configuration.key : null
-    tlsCert = configuration.cert ? configuration.cert : null
+    tlsKey = configuration.tlsKey ? configuration.tlsKey : null
+    tlsCert = configuration.tlsCert ? configuration.tlsCert : null
 }
 
 
@@ -36,7 +36,7 @@ tlsKey = args['key'] ? args['key'] : tlsKey
 tlsCert = args['cert'] ? args['cert'] : tlsCert
 
 
-new Server().create({
+new Server({
     target,
     localPort,
     tlsKey,
