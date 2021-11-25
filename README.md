@@ -6,14 +6,14 @@ Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.
 ## Installation
 
 ```
-npm install https-forward -g
+npm install @shankha/https-forward -g
 ```
 
 ## API
 
 NodeJS usage
 ```js
-const Server = require('https-forward')
+const Server = require('@shankha/https-forward')
 
 new Server().create({
     target: "https://127.0.0.1",    // ex: For remote servers https://example.com
