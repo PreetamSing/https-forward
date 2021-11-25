@@ -1,5 +1,5 @@
 {
-  "name": "https-forward",
+  "name": "@shankha/https-forward",
   "repository": "https://github.com/shankha96/https-forward.git",
   "version": "0.0.1",
   "description": "A simple proxy server to forward requests to your local or development server.",
