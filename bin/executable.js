@@ -16,6 +16,12 @@ try {
     throw Error('Invalid Config File.')
 }
 
+
+let target = null
+let localPort = null
+let tlsKey = null
+let tlsCert = null
+
 if (configuration) {
     target = configuration.target ? configuration.target : null
     localPort = configuration.localPort ? configuration.localPort : null
