@@ -14,7 +14,7 @@
     "request-forward"
   ],
   "author": "Shankhadeep Das",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "finalhandler": "^1.1.2",
     "http-proxy": "^1.18.1",
