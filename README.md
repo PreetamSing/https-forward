@@ -11,6 +11,7 @@ npm install https-forward
 
 ## API
 
+NodeJS usage
 ```js
 const Server = require('https-forward')
 
@@ -23,6 +24,7 @@ new Server().create({
 
 ```
 
+CLI usage
 ```bash
 https-forward -c ./<path/to/configuration/file>
 https-forward --config ./<path/to/configuration/file>
