@@ -4,8 +4,8 @@
 [![NPM](https://img.shields.io/badge/node-14-green)](https://img.shields.io/badge/node-14-green)
 
 
-Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.
-<be />** *Note: Make sure you are using node version 14 or higher **
+Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.\
+***Note: Make sure you are using node version 14 or higher**
 
 ## Installation
 
