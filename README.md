@@ -1,4 +1,7 @@
-# https-forward [![NPM](https://img.shields.io/badge/release-stable-green)](https://www.npmjs.com/package/@shankha/https-forward) [![NPM](https://img.shields.io/badge/version-v0.0.1-green)](https://www.npmjs.com/package/@shankha/https-forward)https://img.shields.io/badge/node-14-green
+# https-forward 
+[![NPM](https://img.shields.io/badge/release-stable-green)](https://www.npmjs.com/package/@shankha/https-forward) 
+[![NPM](https://img.shields.io/badge/version-v0.0.1-green)](https://www.npmjs.com/package/@shankha/https-forward)
+[![NPM](https://img.shields.io/badge/node-14-green)](https://img.shields.io/badge/node-14-green)
 
 
 Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.
