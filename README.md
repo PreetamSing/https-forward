@@ -5,7 +5,7 @@
 
 
 Simple proxy forward for incoming HTTP/HTTPs requests. Built for node.js/io.js.
-*Node: Make sure you are using node version 14 or higher
+<be />** *Note: Make sure you are using node version 14 or higher **
 
 ## Installation
 
